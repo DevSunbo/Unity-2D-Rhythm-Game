@@ -15,13 +15,17 @@ public class NoteBehavior : MonoBehaviour
         if (noteType == 4) keyCode = KeyCode.K;
     }
 
+    public void Initialize()
+    {
+        judge = GameManager.judges.NONE;
+    }
     void Update()
     {
         transform.Translate(Vector3.down * GameManager.instance.noteSpeed);
         if (Input.GetKey(keyCode))
         {
             Debug.Log(judge);
-            if (judge != GameManager.judges.NONE) Destroy(gameObject);
+            if (judge != GameManager.judges.NONE) gameObject.SetActive(false);
         }
     }
 
@@ -42,7 +46,7 @@ public class NoteBehavior : MonoBehaviour
         if (other.gameObject.tag == "Miss")
         {
             judge = GameManager.judges.MISS;
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
        
     }
