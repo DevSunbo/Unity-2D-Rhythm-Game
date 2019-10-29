@@ -32,8 +32,21 @@ public class GameManager : MonoBehaviour
     public enum judges { NONE = 0, BAD, GOOD, PERFECT, MISS};
     public GameObject[] trails;
     private SpriteRenderer[] trailSpriteRenderers;
+
+    private AudioSource audioSource;
+    private string music = "love bubble";
+
+    //음악을 실행하는 함수
+    void MusicStart()
+    {
+        AudioClip audioClip = Resources.Load<AudioClip>("Beats/" + music);
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = audioClip;
+        audioSource.Play();
+    }
     void Start()
     {
+        Invoke("MusicStart", 2);
         judgementSpriteRenderer = judgeUI.GetComponent<Image>();
         judgementSpriteAnimator = judgeUI.GetComponent<Animator>();
         scoreText = scoreUI.GetComponent<Text>();
