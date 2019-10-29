@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     private SpriteRenderer[] trailSpriteRenderers;
 
     private AudioSource audioSource;
-    private string music = "love bubble";
+    public string music = "1";
 
     //음악을 실행하는 함수
     void MusicStart()
