@@ -17,13 +17,14 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     /**/
     public GameObject scoreUI;
-    private float score;
+    public float score;
     private Text scoreText;
 
     public GameObject comboUI;
     private int combo;
     private Text comboText;
     private Animator comboAnimator;
+    public int maxCombo;
 
     public GameObject judgeUI;
     private Sprite[] judgeSprites;
@@ -94,14 +95,20 @@ public class GameManager : MonoBehaviour
 
     void showJudgement()
     {
+        //점수 이미지 출력
         string scoreFormat = "000000";
         scoreText.text = score.ToString(scoreFormat);
         // 판정 이미지를 보여줍니다.
         judgementSpriteAnimator.SetTrigger("Show");
+        //콤보가 2 이상일 떄만 콤보 이미지 출력
         if(combo >= 2)
         {
             comboText.text = "COMBO " + combo.ToString();
             comboAnimator.SetTrigger("Show");
+        }
+        if(maxCombo < combo)
+        {
+            maxCombo = combo;
         }
 
     }
