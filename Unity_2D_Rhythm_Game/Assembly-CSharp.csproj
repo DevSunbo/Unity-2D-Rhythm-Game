@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\GameResultManager.cs" />
     <Compile Include="Assets\Scripts\JoinManager.cs" />
+    <Compile Include="Assets\Scripts\LoginManager.cs" />
     <Compile Include="Assets\Scripts\NoteBehavior.cs" />
     <Compile Include="Assets\Scripts\NoteController.cs" />
     <Compile Include="Assets\Scripts\ObjectPooler.cs" />
@@ -82,9 +83,6 @@
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>D:/Unity_Rhythm_Game/project/Unity-2D-Rhythm-Game/Unity_2D_Rhythm_Game/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Unity_Rhythm_Game/project/Unity-2D-Rhythm-Game/Unity_2D_Rhythm_Game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>D:/Unity_Rhythm_Game/project/Unity-2D-Rhythm-Game/Unity_2D_Rhythm_Game/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
@@ -103,9 +101,6 @@
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>D:/Unity_Rhythm_Game/project/Unity-2D-Rhythm-Game/Unity_2D_Rhythm_Game/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Unity_Rhythm_Game/project/Unity-2D-Rhythm-Game/Unity_2D_Rhythm_Game/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/Unity_Rhythm_Game/project/Unity-2D-Rhythm-Game/Unity_2D_Rhythm_Game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
